@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/diseño.css">
+    <script src="https://kit.fontawesome.com/b375149b8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>DotOffice</h1>
+        </div>
+       </header>
+
+       <div class="subtitu">
+        <h1>Registro de usuario </h1>
+    </div>
+    <main class="dere">
+       
+    
+        <div container class="main">
+            <form action="/moneda.html" class="row needs-validation tipo formulario" novalidate method="get" onsubmit="return validar()">
+    
+                <form action="" class="formulario" id="formulario">
+
+                    <div class="sexo position-relative">
+                        <label for="select" class="formulario__lable">Categoría:</label>
+                        <select class="form-select formulario__input" required aria-label="Default select example">
+                            <option value="">Selecciona una Categoría</option>
+                            <option value="1">Individual</option>
+                            <option value="2">Corporativo</option>
+                          </select>
+                          <div class="invalid-tooltip">
+                            Debe rellenar este campo.
+                          </div>
+                    </div>
+    
+
+
+    
+                    <div class="formulario__grupo position-relative"  id="grupo__nombre">
+                      <label for="nombre"  class="formulario__lable"> Nombres</label>
+                      <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Manuel Alexander" required>
+                        <div class="valid-tooltip">
+                            Todo bien.
+                          </div>
+                          <div class="invalid-tooltip">
+                            Debe rellenar este campo.
+                          </div>
+                      </div>
+                     </div>
+    
+                     <div class="formulario__grupo position-relative"  id="grupo__apellido">
+                        <label for="apellido" class="formulario__lable">Apellidos</label>
+                        <div class="formulario__grupo-input">
+                          <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Umaña Cortez" required>
+                          <div class="valid-tooltip">
+                              Todo bien.
+                            </div>
+                            <div class="invalid-tooltip">
+                              Debe rellenar este campo.
+                            </div>
+                        </div>
+                       </div>
+    
+                       <div class="formulario__grupo position-relative"  id="grupo__email">
+                        <label for="email" class="formulario__lable">Email </label>
+                        <div class="formulario__grupo-input">
+                          <input type="email" class="formulario__input" name="email" id="email" placeholder="ManuUmaña@gmail.com" required>
+                          <div class="valid-tooltip">
+                              Todo bien.
+                            </div>
+                            <div class="invalid-tooltip">
+                              Debe rellenar este campo.
+                            </div>
+                        </div>
+                       </div>
+    
+                      
+                  
+                    <div class="formulario__grupo position-relative"  id="grupo__contraseña1">
+                        <label for="contraseña1" class="formulario__lable">Contraseña del ususario</label>
+                        <div class="formulario__grupo-input">
+                          <input type="password" class="formulario__input" name="contraseña1" id="contraseña1" placeholder="Manu_alex1993" required>
+                          <div class="valid-tooltip">
+                              Todo bien.
+                            </div>
+                            <div class="invalid-tooltip">
+                              Debe rellenar este campo.
+                            </div>
+                        </div>
+                       </div>
+    
+                       <div class="formulario__grupo position-relative"  id="grupo__contraseña2">
+                        <label for="contraseña2" class="formulario__lable">Repita la Contraseña</label>
+                        <div class="formulario__grupo-input">
+                          <input type="password" class="formulario__input" name="contraseña2" id="contraseña2" placeholder="Manu_alex1993" required>
+                          <div class="valid-tooltip">
+                              Todo bien.
+                            </div>
+                            <div class="invalid-tooltip">
+                              Debe rellenar este campo.
+                            </div>
+                        </div>
+                       </div>
+    
+                       <div class="formulario__grupo position-relative">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Acepto los términos y condiciones
+                          </label>
+                          <div class="valid-tooltip">
+                            Todo bien.
+                          </div>
+                          <div class="invalid-tooltip">
+                            Es necesario aceptar los terminos.
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="formulario__grupo position-relative">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Acepto los términos y condiciones
+                          </label>
+                          <div class="valid-tooltip">
+                            Todo bien.
+                          </div>
+                          <div class="invalid-tooltip">
+                            Es necesario aceptar los terminos.
+                          </div>
+                        </div>
+                      </div>
+
+                      
+    
+                       <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn" >Enviar</button>
+                        </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                          <button type="submit" class="linea2"><a class="nav-link active"  href="tabla.html">Enviar</a>
+                          </button>
+                          </div>
+
+                        <div class="formulario__grupo formulario__grupo-btn-enviar linea1">
+                            <button type="submit" class="formulario__btn">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="tabla.html">Enviar</a>
+                                    </li>
+                                  </ul>
+                            </button>
+                        </div>
+
+
+
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="tabla.html"><i class="fa fa-home"
+                                  aria-hidden="true"></i> Enviar</a>
+                            </li>
+                          </ul>
+
+              
+
+
+                         
+
+
+
+
+
+
+    
+    
+            </form>
+    
+    
+    
+    
+        </div>
+        
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/animacion.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+    <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+    </script>
+</body>
+</html>
